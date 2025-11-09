@@ -5,18 +5,18 @@
 
 import React, { useState, useMemo, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import StartScreen from './components/StartScreen';
-import Canvas from './components/Canvas';
-import WardrobePanel from './components/WardrobeModal';
-import OutfitStack from './components/OutfitStack';
-import { generateVirtualTryOnImage, generatePoseVariation, remixImage } from './services/geminiService';
-import { OutfitLayer, WardrobeItem } from './types';
-import { ChevronDownIcon, ChevronUpIcon } from './components/icons';
-import { defaultWardrobe } from './wardrobe';
-import Footer from './components/Footer';
-import { getFriendlyErrorMessage } from './lib/utils';
-import Spinner from './components/Spinner';
-import AdjustmentPanel from './components/AdjustmentPanel';
+import StartScreen from './components/StartScreen.tsx';
+import Canvas from './components/Canvas.tsx';
+import WardrobePanel from './components/WardrobeModal.tsx';
+import OutfitStack from './components/OutfitStack.tsx';
+import { generateVirtualTryOnImage, generatePoseVariation, remixImage } from './services/geminiService.ts';
+import { OutfitLayer, WardrobeItem } from './types.ts';
+import { ChevronDownIcon, ChevronUpIcon } from './components/icons.tsx';
+import { defaultWardrobe } from './wardrobe.ts';
+import Footer from './components/Footer.tsx';
+import { getFriendlyErrorMessage } from './lib/utils.ts';
+import Spinner from './components/Spinner.tsx';
+import AdjustmentPanel from './components/AdjustmentPanel.tsx';
 
 const POSE_INSTRUCTIONS = [
   "Full frontal view, hands on hips",

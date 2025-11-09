@@ -4,10 +4,10 @@
 */
 "use client";
 import React, { useState, useEffect, useRef, useCallback } from "react";
-import { SparklesCore } from "./sparkles";
+import { SparklesCore } from "./sparkles.tsx";
 import { AnimatePresence, motion } from "framer-motion";
-import { cn } from "../../lib/utils";
-import { DotsVerticalIcon } from "../icons";
+import { cn } from "../../lib/utils.ts";
+import { DotsVerticalIcon } from "../icons.tsx";
  
 interface CompareProps {
   firstImage?: string;

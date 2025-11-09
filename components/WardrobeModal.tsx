@@ -3,8 +3,8 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 import React, { useState } from 'react';
-import type { WardrobeItem } from '../types';
-import { UploadCloudIcon, CheckCircleIcon } from './icons';
+import type { WardrobeItem } from '../types.ts';
+import { UploadCloudIcon, CheckCircleIcon } from './icons.tsx';
 
 interface WardrobePanelProps {
   onGarmentSelect: (garmentFile: File, garmentInfo: WardrobeItem) => void;

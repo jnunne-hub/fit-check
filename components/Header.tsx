@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
 */
 import React from 'react';
-import { ShirtIcon } from './icons';
+import { ShirtIcon } from './icons.tsx';
 
 const Header: React.FC = () => {
   return (
